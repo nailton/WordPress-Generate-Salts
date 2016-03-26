@@ -3,4 +3,8 @@
         "caption": "WordPress Generate Salt Keys",
         "command": "wordpress_generate_salts"
     },
+    {
+        "caption": "WordPress Generate Salt Keys DotEnv",
+        "command": "wordpress_salts_dot_env"
+    },
 ]
