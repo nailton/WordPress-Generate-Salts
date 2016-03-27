@@ -15,8 +15,8 @@ class WordpressSaltsDotEnvCommand(sublime_plugin.TextCommand):
         for cursor in self.view.sel():
             salts = request_url()
             salts = re.sub(r"\w+\('", '', salts)
-            salts = re.sub(r"',\s+'", '=', salts)
-            salts = re.sub(r"'\);", '', salts)
+            salts = re.sub(r"',\s+", '=', salts)
+            salts = re.sub(r"\);", '', salts)
             self.view.insert(edit, cursor.begin(), salts )
 
 def request_url():
